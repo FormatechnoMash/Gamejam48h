@@ -30,7 +30,7 @@ namespace Food.Runtime
 		        
                         if (_countDown >= _timeBetweenSpawnsLevelOne)
                         {
-                	        _randomNumber=Random.Range(0,2);
+                	        _randomNumber=Random.Range(0,6);
                 	        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
                 	        _countDown=0;
                         }
@@ -43,7 +43,7 @@ namespace Food.Runtime
 		        
 		        if (_countDown >= _timeBetweenSpawnsLevelTwo)
 		        {
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _countDown=0;
 		        }
@@ -55,7 +55,7 @@ namespace Food.Runtime
 		        if (_countDown >= _randomTimeSpawn)
 		        {
 			        _randomTimeSpawn=Random.Range(_timeBetweenSpawnsLevelThreeMin,_timeBetweenSpawnsLevelThreeMax);
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _countDown=0;
 		        }
@@ -67,7 +67,7 @@ namespace Food.Runtime
 		        if (_countDown >= _randomTimeSpawn)
 		        {
 			        _randomTimeSpawn=Random.Range(_timeBetweenSpawnsLevelFourMin,_timeBetweenSpawnsLevelFourMax);
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        
 			        _myInstance =Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _rigidbody2D=_myInstance.GetComponent<Rigidbody2D>();
