@@ -69,7 +69,9 @@ namespace Food.Runtime
 			        _randomTimeSpawn=Random.Range(_timeBetweenSpawnsLevelFourMin,_timeBetweenSpawnsLevelFourMax);
 			        _randomNumber=Random.Range(0,2);
 			        
-			        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
+			        _myInstance =Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
+			        _rigidbody2D=_myInstance.GetComponent<Rigidbody2D>();
+			        _rigidbody2D.AddForce(Vector2.down *_mass);
 			        _countDown=0;
 		        }
 		        
@@ -80,7 +82,7 @@ namespace Food.Runtime
 		        
 	        }
 	        
-	        if (_difficultyTimer >= 20)
+	        if (_difficultyTimer >= _betweenLevels)
 	        {
 		        
 		        _difficultyLevel=m_changingLevels[i];
@@ -113,7 +115,11 @@ namespace Food.Runtime
 	private int _difficultyLevel=1;
 	private float _difficultyTimer;
 	private int i=0;
-	
+	private GameObject _myInstance;
+	private Rigidbody2D _rigidbody2D;
+	[SerializeField] private float _mass;
+	[SerializeField] private float _betweenLevels=15;
+
 	#endregion
     }
 }
