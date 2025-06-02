@@ -393,6 +393,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: _mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawns
       value: 0.5
       objectReference: {fileID: 0}
@@ -406,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelTwo
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_foodPrefab.Array.data[0]'
@@ -421,16 +425,84 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: m_changingLevels.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelThree
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelFourMax
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: _timeBetweenSpawnsLevelFourMin
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[0]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[2]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[3]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[4]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[5]'
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[6]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[7]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[8]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[9]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelThreeMax
-      value: 1.5
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: _timeBetweenSpawnsLevelThreeMin
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[10]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[11]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[12]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[13]'
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
