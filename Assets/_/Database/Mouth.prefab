@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthPoints: 0
-  _mouthOpen: {fileID: 0}
-  _mouthClose: {fileID: 0}
-  _dead: {fileID: 0}
+  _mouthOpen: {fileID: 21300000, guid: 7c5e41249b620964fbe6604cc568aa55, type: 3}
+  _mouthClose: {fileID: 21300000, guid: d91d99cbefe32a447bac207924066f0d, type: 3}
+  _dead: {fileID: 21300000, guid: 33330249c02d6cb4ca6f0cde963085ae, type: 3}
   _spriteRenderer: {fileID: 0}
 --- !u!60 &6111459873073177652
 PolygonCollider2D:
