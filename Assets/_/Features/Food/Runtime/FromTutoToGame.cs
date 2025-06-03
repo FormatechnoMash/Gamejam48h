@@ -24,7 +24,7 @@ namespace Food.Runtime
         {
 	        if (Input.GetMouseButtonDown(0))
 	        {
-		        SceneManager.LoadScene("DevTestScene");
+		        SceneManager.LoadScene("Tuto2");
 	        }
         }
 	
