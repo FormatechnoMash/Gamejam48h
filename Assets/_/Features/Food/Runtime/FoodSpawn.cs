@@ -17,7 +17,7 @@ namespace Food.Runtime
     
         void Start()
         {
-        
+	        _firstFruit = 0;
         }
 	
     
@@ -27,13 +27,22 @@ namespace Food.Runtime
 	        _countDown+=Time.deltaTime;
 	        if (_difficultyLevel == 1)
 	        {
-		        
-                        if (_countDown >= _timeBetweenSpawnsLevelOne)
-                        {
-                	        _randomNumber=Random.Range(0,2);
-                	        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
-                	        _countDown=0;
-                        }
+		        if (_firstFruit == 0)
+		        {
+			        Instantiate(m_foodPrefab[0], transform.position, Quaternion.identity);
+			        _countDown=0;
+			        _firstFruit = 1;
+		        }
+		        else
+		        {
+			        if (_countDown >= _timeBetweenSpawnsLevelOne)
+			        {
+				        _randomNumber=Random.Range(0,6);
+				        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
+				        _countDown=0;
+			        }
+		        }
+                        
                       
       
 			}
@@ -43,7 +52,7 @@ namespace Food.Runtime
 		        
 		        if (_countDown >= _timeBetweenSpawnsLevelTwo)
 		        {
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _countDown=0;
 		        }
@@ -55,7 +64,7 @@ namespace Food.Runtime
 		        if (_countDown >= _randomTimeSpawn)
 		        {
 			        _randomTimeSpawn=Random.Range(_timeBetweenSpawnsLevelThreeMin,_timeBetweenSpawnsLevelThreeMax);
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _countDown=0;
 		        }
@@ -67,7 +76,7 @@ namespace Food.Runtime
 		        if (_countDown >= _randomTimeSpawn)
 		        {
 			        _randomTimeSpawn=Random.Range(_timeBetweenSpawnsLevelFourMin,_timeBetweenSpawnsLevelFourMax);
-			        _randomNumber=Random.Range(0,2);
+			        _randomNumber=Random.Range(0,6);
 			        
 			        _myInstance =Instantiate(m_foodPrefab[_randomNumber], transform.position, Quaternion.identity);
 			        _rigidbody2D=_myInstance.GetComponent<Rigidbody2D>();
@@ -119,6 +128,7 @@ namespace Food.Runtime
 	private Rigidbody2D _rigidbody2D;
 	[SerializeField] private float _mass;
 	[SerializeField] private float _betweenLevels=15;
+	private int _firstFruit;
 
 	#endregion
     }

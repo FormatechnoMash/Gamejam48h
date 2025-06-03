@@ -5,7 +5,7 @@ namespace Food.Runtime
     public class BadFood : MonoBehaviour
     {
 	    #region public
-
+	    
 
 	    #endregion
 
@@ -15,6 +15,8 @@ namespace Food.Runtime
     
 	    void Start()
 	    {
+		    _rigidbody2D = GetComponent<Rigidbody2D>();
+		    _eating = FindObjectOfType<EatingScript>();
 		    _rigidbody2D = GetComponent<Rigidbody2D>();
 	    }
 
@@ -35,6 +37,19 @@ namespace Food.Runtime
 	    {
 		    if (Input.GetMouseButtonDown(0))
 		    { 
+			    if (gameObject.layer == LayerMask.NameToLayer("Steak"))
+			    {
+				    _eating._score += 200;
+			    }
+			    if (gameObject.layer == LayerMask.NameToLayer("Pepper"))
+			    {
+				    _eating._score += 150;
+			    }
+            
+			    if (gameObject.layer == LayerMask.NameToLayer("Candy"))
+			    {
+				    _eating._score += 100;
+			    }
 			    _rigidbody2D.AddForce(Vector2.left * 1000f);
 		    }
 	    }
@@ -49,7 +64,7 @@ namespace Food.Runtime
 	    private Rigidbody2D _rigidbody2D;
 	    private int _timeToDispawn=3;
 	    private float _countDown;
-
+	    private EatingScript _eating;
 	    #endregion
     }
 }

@@ -7,7 +7,6 @@ namespace Food.Runtime
     {
     #region public
 
-
     #endregion
 
 
@@ -17,6 +16,8 @@ namespace Food.Runtime
         void Start()
         {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _eating = FindObjectOfType<EatingScript>();
         }
 
     
@@ -36,6 +37,19 @@ namespace Food.Runtime
         {
 	        if (Input.GetMouseButtonDown(0))
 	        { 
+		        if (gameObject.layer == LayerMask.NameToLayer("Apple"))
+		        {
+			        _eating._score -= 200;
+		        }
+		        if (gameObject.layer == LayerMask.NameToLayer("Cherries"))
+		        {
+			        _eating._score -= 150;
+		        }
+            
+		        if (gameObject.layer == LayerMask.NameToLayer("Strawberry"))
+		        {
+			        _eating._score -= 100;
+		        }
 		        _rigidbody2D.AddForce(Vector2.left * 1000f);
 	        }
         }
@@ -50,7 +64,7 @@ namespace Food.Runtime
 		private Rigidbody2D _rigidbody2D;
 		private int _timeToDispawn=3;
 		private float _countDown;
-
+		private EatingScript _eating;
 		#endregion
     }
 }
