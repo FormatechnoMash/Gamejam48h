@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6072909369248844247}
   - component: {fileID: -8809501365993693754}
   - component: {fileID: -4972473836129248515}
-  - component: {fileID: 3748461613035282758}
+  - component: {fileID: 4995239529103679202}
   m_Layer: 8
   m_Name: Candy
   m_TagString: BadFood
@@ -129,9 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d70175faf838c479ab5a4e4c12b47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eating: {fileID: 1581403813585412441, guid: a3e3c4e56f1393443aa75460ec139b99, type: 3}
---- !u!60 &3748461613035282758
-PolygonCollider2D:
+--- !u!58 &4995239529103679202
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -165,62 +164,4 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.83, y: 1.52}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.915, y: 0.45999998}
-      - {x: 1.905, y: 0.48999998}
-      - {x: 1.8249999, y: 0.62}
-      - {x: 1.655, y: 0.69}
-      - {x: 1.525, y: 0.65999997}
-      - {x: 1.4449999, y: 0.63}
-      - {x: 1.0649999, y: 0.45999998}
-      - {x: 0.865, y: 0.37}
-      - {x: 0.755, y: 0.32}
-      - {x: 0.715, y: 0.42}
-      - {x: 0.545, y: 0.61}
-      - {x: 0.445, y: 0.66999996}
-      - {x: 0.305, y: 0.74}
-      - {x: 0.195, y: 0.76}
-      - {x: -0.145, y: 0.76}
-      - {x: -0.195, y: 0.75}
-      - {x: -0.36499998, y: 0.7}
-      - {x: -0.525, y: 0.58}
-      - {x: -0.615, y: 0.5}
-      - {x: -0.715, y: 0.34}
-      - {x: -0.895, y: 0.42}
-      - {x: -1.555, y: 0.71}
-      - {x: -1.735, y: 0.7}
-      - {x: -1.905, y: 0.55}
-      - {x: -1.915, y: 0.53}
-      - {x: -1.915, y: -0.53999996}
-      - {x: -1.885, y: -0.62}
-      - {x: -1.7049999, y: -0.75}
-      - {x: -1.645, y: -0.75}
-      - {x: -1.505, y: -0.74}
-      - {x: -1.225, y: -0.59999996}
-      - {x: -0.66499996, y: -0.35999998}
-      - {x: -0.53499997, y: -0.53}
-      - {x: -0.295, y: -0.68}
-      - {x: -0.105, y: -0.71999997}
-      - {x: 0.145, y: -0.71}
-      - {x: 0.305, y: -0.66999996}
-      - {x: 0.42499998, y: -0.62}
-      - {x: 0.545, y: -0.53999996}
-      - {x: 0.695, y: -0.39999998}
-      - {x: 0.895, y: -0.48999998}
-      - {x: 1.285, y: -0.68}
-      - {x: 1.475, y: -0.76}
-      - {x: 1.755, y: -0.76}
-      - {x: 1.8449999, y: -0.68}
-      - {x: 1.885, y: -0.63}
-      - {x: 1.915, y: -0.56}
-  m_UseDelaunayMesh: 0
+  m_Radius: 1.915

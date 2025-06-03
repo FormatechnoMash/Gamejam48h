@@ -70,8 +70,13 @@ namespace Food.Runtime
 	          }
 	          else
 	          {
-            		        _score -= 1500;
-            		        _healthPoints -= 1;
+		          if (_healthPoints > 0)
+		          {
+			          _score -= 1500;
+			          _healthPoints -= 1;
+			          _hpDisplay[_healthPoints].SetActive(false);
+		          }
+		          
 	          }
 	        Destroy(food);
 	        _spriteRenderer.sprite = _mouthOpen;
@@ -103,7 +108,7 @@ namespace Food.Runtime
 	[SerializeField]private Sprite _dead;
 	[SerializeField]private SpriteRenderer _spriteRenderer;
 	private GameObject _object;
-
+	[SerializeField]private GameObject[]  _hpDisplay;
 	#endregion
     }
 }
