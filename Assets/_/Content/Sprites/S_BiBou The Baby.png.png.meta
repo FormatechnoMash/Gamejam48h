@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 1187141ffe9863a4cac00e18e0b8eb5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7375577064186063242
+    second: S_BiBou The Baby.png_0
+  - first:
+      213: -6020412356805534623
+    second: S_BiBou The Baby.png_1
+  - first:
+      213: -2967840455021120680
+    second: S_BiBou The Baby.png_2
+  - first:
+      213: -4595123935845601704
+    second: S_BiBou The Baby.png_3
+  - first:
+      213: 8534809557526322762
+    second: S_BiBou The Baby.png_4
+  - first:
+      213: -1539175142291763830
+    second: S_BiBou The Baby.png_5
+  - first:
+      213: -3368087485264450589
+    second: S_BiBou The Baby.png_6
+  - first:
+      213: -2226824721196245205
+    second: S_BiBou The Baby.png_7
+  - first:
+      213: -4272132808545690295
+    second: S_BiBou The Baby.png_8
+  - first:
+      213: 5086525394485160334
+    second: S_BiBou The Baby.png_9
+  - first:
+      213: -3236851265329833105
+    second: S_BiBou The Baby.png_10
+  - first:
+      213: -6262042304564932186
+    second: S_BiBou The Baby.png_11
+  - first:
+      213: -1794837491867177340
+    second: S_BiBou The Baby.png_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_0
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 457
+        width: 203
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89245c23405b5660800000000000000
+      internalID: 7375577064186063242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 652
+        width: 83
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cdb37ebd2337ca0800000000000000
+      internalID: -6020412356805534623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 457
+        width: 203
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853be6894dc10d6d0800000000000000
+      internalID: -2967840455021120680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_3
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 458
+        width: 208
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e27095027da30c0800000000000000
+      internalID: -4595123935845601704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_4
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 459
+        width: 205
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e17fdb21cb17670800000000000000
+      internalID: 8534809557526322762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 456
+        width: 84
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d869cec50c3aae0800000000000000
+      internalID: -1539175142291763830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 54
+        width: 202
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebaf5ce6462241d0800000000000000
+      internalID: -3368087485264450589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_7
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 53
+        width: 209
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f1a0cd6bab811e0800000000000000
+      internalID: -2226824721196245205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 53
+        width: 211
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d975968d556b4c0800000000000000
+      internalID: -4272132808545690295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_9
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 54
+        width: 203
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89aa4f85e7f69640800000000000000
+      internalID: 5086525394485160334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_10
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 52
+        width: 207
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bdd3b7ce46413d0800000000000000
+      internalID: -3236851265329833105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_11
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 53
+        width: 201
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a150f3a3b1c819a0800000000000000
+      internalID: -6262042304564932186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_BiBou The Baby.png_12
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 205
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e24b38fc47717e0800000000000000
+      internalID: -1794837491867177340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      S_BiBou The Baby.png_0: 7375577064186063242
+      S_BiBou The Baby.png_1: -6020412356805534623
+      S_BiBou The Baby.png_10: -3236851265329833105
+      S_BiBou The Baby.png_11: -6262042304564932186
+      S_BiBou The Baby.png_12: -1794837491867177340
+      S_BiBou The Baby.png_2: -2967840455021120680
+      S_BiBou The Baby.png_3: -4595123935845601704
+      S_BiBou The Baby.png_4: 8534809557526322762
+      S_BiBou The Baby.png_5: -1539175142291763830
+      S_BiBou The Baby.png_6: -3368087485264450589
+      S_BiBou The Baby.png_7: -2226824721196245205
+      S_BiBou The Baby.png_8: -4272132808545690295
+      S_BiBou The Baby.png_9: 5086525394485160334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
