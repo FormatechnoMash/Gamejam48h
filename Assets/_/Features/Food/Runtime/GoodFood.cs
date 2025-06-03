@@ -1,4 +1,4 @@
-using System;
+
 using UnityEngine;
 
 namespace Food.Runtime
@@ -50,9 +50,10 @@ namespace Food.Runtime
 		        {
 			        _eating._score -= 100;
 		        }
+		        _audioSource.Play();
 		        _rigidbody2D.AddForce(Vector2.left * 1000f);
 		        if (_eating._score < 0)
-		        {
+		        {																
 			        _eating._score = 0;
 		        }
 	        }

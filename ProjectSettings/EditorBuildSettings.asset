@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_/Levels/Scenes/DevTestScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/_/Levels/Scenes/StartGameScene.unity
+    guid: d8cd1fca739511842a898f59fac49f13
   - enabled: 1
     path: Assets/_/Levels/Scenes/TutoScene.unity
     guid: 3eb68d5f9d6710e48b9b1e10e92400ef
   - enabled: 1
-    path: Assets/_/Levels/Scenes/LoosingScene.unity
-    guid: ea254dffe81afaa43b39901f8cf6681d
+    path: Assets/_/Levels/Scenes/Tuto2.unity
+    guid: ec6419e4232297643b4522fb9e6b6ce4
+  - enabled: 1
+    path: Assets/_/Levels/Scenes/DevTestScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/_/Levels/Scenes/MaxScoreScene.unity
     guid: 84f8ba21aeda70b47b88060d26cb0bde
@@ -21,8 +24,8 @@ EditorBuildSettings:
     path: Assets/_/Levels/Scenes/WinningScene.unity
     guid: 3633aa27f144ab1478f0e66cd039f49b
   - enabled: 1
-    path: Assets/_/Levels/Scenes/Tuto2.unity
-    guid: ec6419e4232297643b4522fb9e6b6ce4
+    path: Assets/_/Levels/Scenes/LoosingScene.unity
+    guid: ea254dffe81afaa43b39901f8cf6681d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

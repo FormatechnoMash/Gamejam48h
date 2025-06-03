@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Codice.Client.Common.EventTracking;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
 
 namespace Food.Runtime
