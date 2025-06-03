@@ -1242,7 +1242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -135.79999, y: -27}
+  m_AnchoredPosition: {x: -135.80005, y: -27}
   m_SizeDelta: {x: 233, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434450768
@@ -1569,6 +1569,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: _betweenLevels
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawns
       value: 0.5
       objectReference: {fileID: 0}
@@ -1582,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelTwo
-      value: 1.75
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_foodPrefab.Array.data[0]'
@@ -1614,7 +1618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: m_changingLevels.Array.size
-      value: 3
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelThree
@@ -1622,15 +1626,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelFourMax
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelFourMin
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_changingLevels.Array.data[0]'
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_changingLevels.Array.data[1]'
@@ -1638,19 +1642,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_changingLevels.Array.data[2]'
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: 'm_changingLevels.Array.data[3]'
-      value: 5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[4]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[5]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[6]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[7]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[8]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[9]'
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelThreeMax
-      value: 1.75
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
       propertyPath: _timeBetweenSpawnsLevelThreeMin
-      value: 1.25
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[10]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[11]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[12]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[13]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[14]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[15]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[16]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[17]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232278278900326025, guid: dc4965f2cd65da84b824975e876d89f1, type: 3}
+      propertyPath: 'm_changingLevels.Array.data[18]'
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
