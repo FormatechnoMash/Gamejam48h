@@ -13,7 +13,12 @@ namespace Food.Runtime
 
 	    #region unity API
 
-    
+	    void Awake()
+	    {
+		    DontDestroyOnLoad(gameObject);
+	    
+		    SceneManager.sceneLoaded += OnSceneLoaded;
+	    }
 	    void Start()
 	    {
         
@@ -32,10 +37,27 @@ namespace Food.Runtime
 	
 	    #region Utils
 	
+	    
+	    
+	    void OnDestroy()
+	    {
+		    SceneManager.sceneLoaded -= OnSceneLoaded;
+	    }
+
+	    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	    {
+		    if (scene.name == "DevTestScene") 
+		    {
+			    _audioSource.Stop(); 
+			    Destroy(gameObject); 
+		    }
+	    }
+	    
+	    
 	    #endregion
 	
 	    #region private
-	
+		[SerializeField]private AudioSource _audioSource;
 	    #endregion
     }
 }

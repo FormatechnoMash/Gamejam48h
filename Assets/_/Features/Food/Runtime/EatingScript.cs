@@ -95,6 +95,7 @@ namespace Food.Runtime
 			          {
 				          _score = 0;
 			          }
+			          _audioSource.Play();
 			          _healthPoints -= 1;
 			          _hpDisplay[_healthPoints].SetActive(false);
 		          }
@@ -131,6 +132,7 @@ namespace Food.Runtime
 	[SerializeField]private SpriteRenderer _spriteRenderer;
 	private GameObject _object;
 	[SerializeField]private GameObject[]  _hpDisplay;
+	[SerializeField]private AudioSource  _audioSource;
 	#endregion
     }
 }

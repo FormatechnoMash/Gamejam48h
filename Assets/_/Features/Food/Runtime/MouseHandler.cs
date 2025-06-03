@@ -32,7 +32,9 @@ namespace Food.Runtime
 	        if (Input.GetMouseButtonDown(0))
 	        {
 		        if (_countDown >= _animationWaiter)
-		        {
+		        { 
+			     
+			    _audioSource.Play();
 		        StartCoroutine(SlapFood());
 		        _countDown=0;
 		        }
@@ -65,7 +67,7 @@ namespace Food.Runtime
     private float _countDown;
     private float _animationWaiter=0.25f;
     [SerializeField] private GameObject _rSlap;
-
+	[SerializeField] private AudioSource _audioSource;
     #endregion
     }
 }

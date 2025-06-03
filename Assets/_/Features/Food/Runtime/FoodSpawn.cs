@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -16,8 +17,15 @@ namespace Food.Runtime
 
     #region unity API
 
-    
-        void Start()
+    void Awake()
+    {
+	    DontDestroyOnLoad(gameObject);
+	    
+	    SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+   
+    void Start()
         {
 	        _firstFruit = 0;
         }
@@ -114,6 +122,27 @@ namespace Food.Runtime
     
     #region Utils
 	
+    
+    
+    
+    void OnDestroy()
+    {
+	    SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+	    if (scene.name == "LoosingScene" || scene.name == "MaxScoreScene") 
+	    {
+		    _audioSource.Stop(); 
+		    Destroy(gameObject); 
+	    }
+    }
+    
+    
+    
+    
+    
     #endregion
 	
     
@@ -136,6 +165,7 @@ namespace Food.Runtime
 	[SerializeField] private float _mass;
 	[SerializeField] private float _betweenLevels=15;
 	private int _firstFruit;
+	[SerializeField] private AudioSource _audioSource;
 
 	#endregion
     }

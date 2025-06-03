@@ -50,6 +50,7 @@ namespace Food.Runtime
 			    {
 				    _eating._score += 100;
 			    }
+			    _audioSource.Play();
 			    _rigidbody2D.AddForce(Vector2.left * 1000f);
 		    }
 	    }
@@ -65,6 +66,7 @@ namespace Food.Runtime
 	    private int _timeToDispawn=3;
 	    private float _countDown;
 	    private EatingScript _eating;
+	    [SerializeField]private AudioSource _audioSource;
 	    #endregion
     }
 }

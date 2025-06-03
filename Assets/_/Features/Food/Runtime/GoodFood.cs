@@ -69,6 +69,7 @@ namespace Food.Runtime
 		private int _timeToDispawn=3;
 		private float _countDown;
 		private EatingScript _eating;
+		[SerializeField]private AudioSource _audioSource;
 		#endregion
     }
 }
