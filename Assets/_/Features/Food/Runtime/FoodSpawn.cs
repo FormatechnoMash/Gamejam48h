@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace Food.Runtime
@@ -6,7 +7,8 @@ namespace Food.Runtime
     public class FoodSpawn : MonoBehaviour
     {
     #region public
-    
+    public EatingScript eatingScript;
+    public HighScoreManager highScoreManager; 
 	public GameObject[] m_foodPrefab;
 	public int[] m_changingLevels;
     #endregion
@@ -88,7 +90,12 @@ namespace Food.Runtime
 
 	        if (_difficultyLevel == 5)
 	        {
-		        
+		        Cursor.lockState = CursorLockMode.None;
+		        Cursor.visible = true;
+		        highScoreManager.CheckAndAddHighScore(eatingScript._score);
+		        PlayerPrefs.SetInt("CurrentScore", eatingScript._score);
+		        PlayerPrefs.Save();
+		        SceneManager.LoadScene("MaxScoreScene");
 	        }
 	        
 	        if (_difficultyTimer >= _betweenLevels)

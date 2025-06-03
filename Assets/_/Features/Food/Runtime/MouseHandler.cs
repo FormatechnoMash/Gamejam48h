@@ -17,6 +17,7 @@ namespace Food.Runtime
     
         void Start()
         {
+	        _rSlap.SetActive(false);
 	        Cursor.lockState = CursorLockMode.Locked;
 	        Cursor.visible = true;
 	        _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -43,8 +44,10 @@ namespace Food.Runtime
         private IEnumerator SlapFood()
         {
 	        yield return new WaitForSeconds(0.1f);
+	        _rSlap.SetActive(true);
 	        _spriteRenderer.sprite = _handBack;
 	        yield return new WaitForSeconds(0.1f);
+	        _rSlap.SetActive(false);
 	        _spriteRenderer.sprite = _handFront;
 	        
         }
@@ -61,6 +64,7 @@ namespace Food.Runtime
     private SpriteRenderer _spriteRenderer;
     private float _countDown;
     private float _animationWaiter=0.25f;
+    [SerializeField] private GameObject _rSlap;
 
     #endregion
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Codice.Client.Common.EventTracking;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 namespace Food.Runtime
 {
@@ -32,7 +33,12 @@ namespace Food.Runtime
 	        
         if(_healthPoints<=0)
         {
+	        PlayerPrefs.SetInt("CurrentScore", _score);
+	        PlayerPrefs.Save();
 	        _spriteRenderer.sprite = _dead;
+	        SceneManager.LoadScene("LoosingScene");
+	        Cursor.lockState = CursorLockMode.None;
+	        Cursor.visible = true;
         }
         
         }
@@ -72,7 +78,23 @@ namespace Food.Runtime
 	          {
 		          if (_healthPoints > 0)
 		          {
-			          _score -= 1500;
+			          if (food.layer == LayerMask.NameToLayer("Candy"))
+			          {
+				          _score -= 1000;
+			          }
+			          if (food.layer == LayerMask.NameToLayer("Pepper"))
+			          {
+				          _score -= 1500;
+			          }
+            
+			          if (food.layer == LayerMask.NameToLayer("Steak"))
+			          {
+				          _score -= 2000;
+			          }
+			          if (_score < 0)
+			          {
+				          _score = 0;
+			          }
 			          _healthPoints -= 1;
 			          _hpDisplay[_healthPoints].SetActive(false);
 		          }

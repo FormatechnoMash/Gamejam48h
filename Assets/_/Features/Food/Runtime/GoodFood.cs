@@ -51,6 +51,10 @@ namespace Food.Runtime
 			        _eating._score -= 100;
 		        }
 		        _rigidbody2D.AddForce(Vector2.left * 1000f);
+		        if (_eating._score < 0)
+		        {
+			        _eating._score = 0;
+		        }
 	        }
         }
 
